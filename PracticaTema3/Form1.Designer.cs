@@ -32,9 +32,10 @@ namespace PracticaTema3
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.rbOrdinario = new System.Windows.Forms.RadioButton();
+            this.rbUrgente = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
@@ -65,16 +66,6 @@ namespace PracticaTema3
             this.label3.TabIndex = 3;
             this.label3.Text = "Coste:";
             // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(34, 208);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(73, 19);
-            this.cbUrgente.TabIndex = 4;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
-            // 
             // txtTelegrama
             // 
             this.txtTelegrama.Location = new System.Drawing.Point(34, 48);
@@ -91,14 +82,37 @@ namespace PracticaTema3
             this.txtPrecio.Size = new System.Drawing.Size(170, 25);
             this.txtPrecio.TabIndex = 6;
             // 
+            // rbOrdinario
+            // 
+            this.rbOrdinario.AutoSize = true;
+            this.rbOrdinario.Location = new System.Drawing.Point(34, 207);
+            this.rbOrdinario.Name = "rbOrdinario";
+            this.rbOrdinario.Size = new System.Drawing.Size(75, 19);
+            this.rbOrdinario.TabIndex = 7;
+            this.rbOrdinario.TabStop = true;
+            this.rbOrdinario.Text = "Ordinario";
+            this.rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            this.rbUrgente.AutoSize = true;
+            this.rbUrgente.Location = new System.Drawing.Point(134, 209);
+            this.rbUrgente.Name = "rbUrgente";
+            this.rbUrgente.Size = new System.Drawing.Size(67, 19);
+            this.rbUrgente.TabIndex = 8;
+            this.rbUrgente.TabStop = true;
+            this.rbUrgente.Text = "Urgente";
+            this.rbUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 330);
+            this.Controls.Add(this.rbUrgente);
+            this.Controls.Add(this.rbOrdinario);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtTelegrama);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -114,9 +128,10 @@ namespace PracticaTema3
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.TextBox txtTelegrama;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.RadioButton rbOrdinario;
+        private System.Windows.Forms.RadioButton rbUrgente;
     }
 }
 

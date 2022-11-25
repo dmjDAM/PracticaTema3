@@ -26,11 +26,14 @@ namespace PracticaTema3
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
             //Si el telegrama es ordinario
+            if (rbOrdinario.Checked)
+                numPalabras = textoTelegrama.Length;
+           
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
                     coste = 25;
@@ -45,7 +48,7 @@ namespace PracticaTema3
                     coste = 5 + 0.75 * (numPalabras - 10);
             else
                 coste = 0;
-            txtPrecio.Text = coste.ToString() + " euros";
+                txtPrecio.Text = coste.ToString() + " euros";
         }
     }
     }
